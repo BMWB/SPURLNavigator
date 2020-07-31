@@ -6,7 +6,9 @@ import PackageDescription
 let package = Package(
     name: "SPURLNavigator",
     products: [
-    .library(name: "SPURLNavigator", targets: ["SPURLNavigator"])
+    .library(name: "SPURLNavigator",
+             type: .static,
+             targets: ["SPURLNavigator"])
     ], dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url:"https://github.com/devxoul/URLNavigator.git", from: "2.3.0"),
